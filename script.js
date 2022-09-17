@@ -25,7 +25,7 @@ pianokeys.forEach((pianoKey, i) => {
   let number = i < 9 ? "0" + (i + 1) : i + 1;
 
   pianoKey.addEventListener("click", (e) => {
-    let url = `../sounds/24-piano-keys_key${number}.mp3`;
+    let url = `./sounds/24-piano-keys_key${number}.mp3`;
     colorChange(Number(number) - 1);
     playSound(url);
   });
@@ -38,7 +38,7 @@ document.addEventListener("keydown", function (e) {
   if (list1.includes(val)) {
     let ind = list1.indexOf(val);
     let number = ind < 9 ? "0" + (ind + 1) : ind + 1;
-    let url = `../sounds/24-piano-keys_key${number}.mp3`;
+    let url = `./sounds/24-piano-keys_key${number}.mp3`;
     colorChange(Number(number) - 1);
     playSound(url);
   }
